@@ -1,0 +1,134 @@
+[
+  {
+    "name": "Albuquerque",
+    "slug": "albuquerque"
+  },
+  {
+    "name": "Las Cruces",
+    "slug": "las-cruces"
+  },
+  {
+    "name": "Rio Rancho",
+    "slug": "rio-rancho"
+  },
+  {
+    "name": "Santa Fe",
+    "slug": "santa-fe"
+  },
+  {
+    "name": "Roswell",
+    "slug": "roswell"
+  },
+  {
+    "name": "Farmington",
+    "slug": "farmington"
+  },
+  {
+    "name": "Clovis",
+    "slug": "clovis"
+  },
+  {
+    "name": "Hobbs",
+    "slug": "hobbs"
+  },
+  {
+    "name": "Alamogordo",
+    "slug": "alamogordo"
+  },
+  {
+    "name": "Carlsbad",
+    "slug": "carlsbad"
+  },
+  {
+    "name": "Gallup",
+    "slug": "gallup"
+  },
+  {
+    "name": "Deming",
+    "slug": "deming"
+  },
+  {
+    "name": "Los Lunas",
+    "slug": "los-lunas"
+  },
+  {
+    "name": "Sunland Park",
+    "slug": "sunland-park"
+  },
+  {
+    "name": "Las Vegas",
+    "slug": "las-vegas"
+  },
+  {
+    "name": "Portales",
+    "slug": "portales"
+  },
+  {
+    "name": "Artesia",
+    "slug": "artesia"
+  },
+  {
+    "name": "Lovington",
+    "slug": "lovington"
+  },
+  {
+    "name": "Silver City",
+    "slug": "silver-city"
+  },
+  {
+    "name": "Espanola",
+    "slug": "espanola"
+  },
+  {
+    "name": "Grants",
+    "slug": "grants"
+  },
+  {
+    "name": "Socorro",
+    "slug": "socorro"
+  },
+  {
+    "name": "Corrales",
+    "slug": "corrales"
+  },
+  {
+    "name": "Bernalillo",
+    "slug": "bernalillo"
+  },
+  {
+    "name": "Belen",
+    "slug": "belen"
+  },
+  {
+    "name": "Bloomfield",
+    "slug": "bloomfield"
+  },
+  {
+    "name": "Ruidoso",
+    "slug": "ruidoso"
+  },
+  {
+    "name": "Aztec",
+    "slug": "aztec"
+  },
+  {
+    "name": "Truth or Consequences",
+    "slug": "truth-or-consequences"
+  },
+  {
+    "name": "Raton",
+    "slug": "raton"
+  },
+  {
+    "name": "Los Alamos",
+    "slug": "los-alamos"
+  },
+  {
+    "name": "Taos",
+    "slug": "taos"
+  },
+  {
+    "name": "Tucumcari",
+    "slug": "tucumcari"
+  }
+]

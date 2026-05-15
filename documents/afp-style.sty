@@ -1,0 +1,198 @@
+% Anti-Federalist Party — Shared Document Style
+% Premium branded LaTeX style for all organizational documents
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{afp-style}[2026/05/15 Anti-Federalist Party Document Style]
+
+% ─── CORE PACKAGES ───
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[T1]{fontenc}
+\RequirePackage{amssymb}
+\RequirePackage{lmodern}
+\RequirePackage{microtype}
+\RequirePackage[margin=1in, top=1.25in, bottom=1.25in]{geometry}
+\RequirePackage{xcolor}
+\RequirePackage{titlesec}
+\RequirePackage{titletoc}
+\RequirePackage{fancyhdr}
+\RequirePackage{enumitem}
+\RequirePackage{tabularx}
+\RequirePackage{booktabs}
+\RequirePackage{colortbl}
+\RequirePackage{graphicx}
+\RequirePackage{tikz}
+\RequirePackage{parskip}
+\RequirePackage{multicol}
+\RequirePackage{hyperref}
+\RequirePackage{lastpage}
+\RequirePackage{setspace}
+
+% ─── BRAND COLORS ───
+\definecolor{afp-teal}{HTML}{2EC4B6}
+\definecolor{afp-dark}{HTML}{0A0A12}
+\definecolor{afp-darkblue}{HTML}{0D7377}
+\definecolor{afp-cream}{HTML}{F0EDE6}
+\definecolor{afp-gray}{HTML}{6B7280}
+\definecolor{afp-lightgray}{HTML}{E5E7EB}
+\definecolor{afp-rule}{HTML}{D1D5DB}
+\definecolor{afp-accent}{HTML}{2EC4B6}
+
+% ─── HYPERLINKS ───
+\hypersetup{
+  colorlinks=true,
+  linkcolor=afp-darkblue,
+  urlcolor=afp-darkblue,
+  citecolor=afp-darkblue,
+  pdfcreator={Anti-Federalist Party},
+}
+
+% ─── TYPOGRAPHY ───
+\setstretch{1.15}
+\setlength{\parskip}{0.5em}
+
+% ─── HEADER/FOOTER ───
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead[R]{\raisebox{-4pt}{\includegraphics[height=14pt]{logo.png}}}
+
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\footrule}{\hbox to\headwidth{\color{afp-teal}\leaders\hrule height \footrulewidth\hfill}\vskip 4pt}
+\fancyfoot[L]{\small\color{afp-gray}\textsc{Anti-Federalist Party}}
+\fancyfoot[C]{\small\color{afp-gray}\afp@doctype}
+\fancyfoot[R]{\small\color{afp-gray}Page \thepage\ of \pageref{LastPage}}
+
+% Document type macro
+\newcommand{\afp@doctype}{}
+\newcommand{\afpdoctype}[1]{\renewcommand{\afp@doctype}{#1}}
+
+% ─── TITLE FORMATTING ───
+\titleformat{\section}
+  {\Large\bfseries\sffamily\color{afp-darkblue}}
+  {\thesection.}{0.5em}{}
+  [\vspace{-0.3em}{\color{afp-teal}\rule{\textwidth}{0.5pt}}]
+
+\titleformat{\subsection}
+  {\large\bfseries\sffamily\color{afp-darkblue}}
+  {\thesubsection}{0.5em}{}
+
+\titleformat{\subsubsection}
+  {\normalsize\bfseries\sffamily\color{afp-darkblue}}
+  {\thesubsubsection}{0.5em}{}
+
+% ─── CUSTOM TITLE PAGE ───
+\newcommand{\afptitlepage}[2]{%
+  \begin{titlepage}
+    \centering
+    \vspace*{1.5cm}
+    % Top rule
+    {\color{afp-teal}\rule{\textwidth}{2pt}}
+    \vspace{1.25cm}
+
+    % Logo
+    \includegraphics[width=3.5cm]{logo.png}
+
+    \vspace{1.25cm}
+
+    % Title
+    {\fontsize{28}{34}\selectfont\bfseries\sffamily\color{afp-darkblue}
+      #1\par}
+    \vspace{0.75cm}
+
+    % Subtitle
+    {\large\color{afp-gray}\sffamily #2\par}
+
+    \vspace{1.25cm}
+    {\color{afp-teal}\rule{4cm}{0.5pt}}
+    \vspace{0.75cm}
+
+    {\normalsize\color{afp-gray}\sffamily
+      \textbf{The Anti-Federalist Party}\\[0.25em]
+      \textit{``The government closest to the people serves the people best.''}
+    }
+
+    \vfill
+
+    {\small\color{afp-gray}\sffamily
+      Document Version 1.0 \quad$\bullet$\quad Adopted \today\\[0.25em]
+      \texttt{anti-federalists.com}
+    }
+
+    \vspace{0.75cm}
+    {\color{afp-teal}\rule{\textwidth}{2pt}}
+  \end{titlepage}
+  \setcounter{page}{1}
+}
+
+% ─── ARTICLE ENVIRONMENT (for constitution) ───
+\newcounter{article}
+\newcommand{\article}[1]{%
+  \refstepcounter{article}%
+  \vspace{1em}%
+  {\Large\bfseries\sffamily\color{afp-darkblue}Article \Roman{article}. #1\par}%
+  \vspace{-0.3em}{\color{afp-teal}\rule{\textwidth}{0.5pt}}\par%
+  \vspace{0.5em}%
+}
+
+% ─── CALLOUT BOX ───
+\newcommand{\afpcallout}[1]{%
+  \vspace{0.5em}
+  \noindent
+  \begin{tikzpicture}
+    \node[inner sep=12pt, text width=\textwidth-30pt,
+      draw=afp-teal, line width=0.5pt, rounded corners=3pt,
+      fill=afp-teal!5] {%
+      \small\itshape\color{afp-darkblue} #1
+    };
+  \end{tikzpicture}
+  \vspace{0.5em}
+}
+
+% ─── SIGNATURE BLOCK (premium) ───
+\newcommand{\signatureline}[1]{%
+  \vspace{1.8cm}%
+  \noindent%
+  \begin{minipage}[b]{0.55\textwidth}%
+    {\color{afp-teal}\rule{\linewidth}{0.5pt}}\\[3pt]%
+    {\small\sffamily\color{afp-darkblue}\textbf{#1}}%
+  \end{minipage}%
+  \hfill%
+  \begin{minipage}[b]{0.35\textwidth}%
+    {\color{afp-teal}\rule{\linewidth}{0.5pt}}\\[3pt]%
+    {\small\sffamily\color{afp-darkblue}\textbf{Date}}%
+  \end{minipage}%
+  \vspace{0.5em}\par%
+}
+
+% ─── CERTIFICATION BLOCK (for end of documents) ───
+\newcommand{\afpcertification}[1]{%
+  \vspace{2cm}%
+  \begin{center}%
+    \includegraphics[width=1.5cm]{logo.png}\\[0.75em]%
+    {\color{afp-teal}\rule{6cm}{0.5pt}}\\[0.75em]%
+    {\large\bfseries\sffamily\color{afp-darkblue} #1}\\[0.4em]%
+    {\color{afp-gray}\sffamily\today}\\[0.3em]%
+    {\small\color{afp-gray}\sffamily\texttt{anti-federalists.com}}%
+  \end{center}%
+}
+
+% ─── FORM FIELD (polished) ───
+\newcommand{\formfield}[2][7cm]{%
+  \vspace{0.4em}%
+  \noindent%
+  {\small\sffamily\color{afp-darkblue}\textbf{#2:}}\quad{\color{afp-rule}\rule{#1}{0.4pt}}%
+  \vspace{0.4em}\par%
+}
+
+% ─── LIST STYLING ───
+\setlist[enumerate]{
+  leftmargin=2em,
+  label={\color{afp-teal}\arabic*.},
+  itemsep=0.3em,
+}
+\setlist[itemize]{
+  leftmargin=2em,
+  label={\color{afp-teal}\textbullet},
+  itemsep=0.3em,
+}
+
+\endinput

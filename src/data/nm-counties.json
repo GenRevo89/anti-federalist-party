@@ -1,0 +1,167 @@
+[
+  {
+    "name": "Bernalillo",
+    "state": "nm",
+    "slug": "bernalillo"
+  },
+  {
+    "name": "Catron",
+    "state": "nm",
+    "slug": "catron"
+  },
+  {
+    "name": "Chaves",
+    "state": "nm",
+    "slug": "chaves"
+  },
+  {
+    "name": "Cibola",
+    "state": "nm",
+    "slug": "cibola"
+  },
+  {
+    "name": "Colfax",
+    "state": "nm",
+    "slug": "colfax"
+  },
+  {
+    "name": "Curry",
+    "state": "nm",
+    "slug": "curry"
+  },
+  {
+    "name": "De Baca",
+    "state": "nm",
+    "slug": "de-baca"
+  },
+  {
+    "name": "Doña Ana",
+    "state": "nm",
+    "slug": "do-a-ana"
+  },
+  {
+    "name": "Eddy",
+    "state": "nm",
+    "slug": "eddy"
+  },
+  {
+    "name": "Grant",
+    "state": "nm",
+    "slug": "grant"
+  },
+  {
+    "name": "Guadalupe",
+    "state": "nm",
+    "slug": "guadalupe"
+  },
+  {
+    "name": "Harding",
+    "state": "nm",
+    "slug": "harding"
+  },
+  {
+    "name": "Hidalgo",
+    "state": "nm",
+    "slug": "hidalgo"
+  },
+  {
+    "name": "Lea",
+    "state": "nm",
+    "slug": "lea"
+  },
+  {
+    "name": "Lincoln",
+    "state": "nm",
+    "slug": "lincoln"
+  },
+  {
+    "name": "Los Alamos",
+    "state": "nm",
+    "slug": "los-alamos"
+  },
+  {
+    "name": "Luna",
+    "state": "nm",
+    "slug": "luna"
+  },
+  {
+    "name": "McKinley",
+    "state": "nm",
+    "slug": "mckinley"
+  },
+  {
+    "name": "Mora",
+    "state": "nm",
+    "slug": "mora"
+  },
+  {
+    "name": "Otero",
+    "state": "nm",
+    "slug": "otero"
+  },
+  {
+    "name": "Quay",
+    "state": "nm",
+    "slug": "quay"
+  },
+  {
+    "name": "Rio Arriba",
+    "state": "nm",
+    "slug": "rio-arriba"
+  },
+  {
+    "name": "Roosevelt",
+    "state": "nm",
+    "slug": "roosevelt"
+  },
+  {
+    "name": "San Juan",
+    "state": "nm",
+    "slug": "san-juan"
+  },
+  {
+    "name": "San Miguel",
+    "state": "nm",
+    "slug": "san-miguel"
+  },
+  {
+    "name": "Sandoval",
+    "state": "nm",
+    "slug": "sandoval"
+  },
+  {
+    "name": "Santa Fe",
+    "state": "nm",
+    "slug": "santa-fe"
+  },
+  {
+    "name": "Sierra",
+    "state": "nm",
+    "slug": "sierra"
+  },
+  {
+    "name": "Socorro",
+    "state": "nm",
+    "slug": "socorro"
+  },
+  {
+    "name": "Taos",
+    "state": "nm",
+    "slug": "taos"
+  },
+  {
+    "name": "Torrance",
+    "state": "nm",
+    "slug": "torrance"
+  },
+  {
+    "name": "Union",
+    "state": "nm",
+    "slug": "union"
+  },
+  {
+    "name": "Valencia",
+    "state": "nm",
+    "slug": "valencia"
+  }
+]
