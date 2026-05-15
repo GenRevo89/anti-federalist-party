@@ -19,10 +19,10 @@ const CORE_DOCUMENTS = [
 ];
 
 const STATE_DOCUMENTS = [
-  { filename: 'state-formation-packet.pdf', title: 'State Formation Packet', description: 'Complete filing documentation for state-level party recognition. Includes statement of organization, principles adoption, financial disclosure, petition and convention certification, and submission checklist.', pages: '7', icon: FileText, color: '#EF4444' },
-  { filename: 'state-committee-bylaws.pdf', title: 'State Committee Bylaws', description: 'Governing rules for the state coordinating body covering composition, officers, meetings, candidate endorsement, finances, amendments, and dissolution.', pages: '6', icon: BookOpen, color: '#EF4444' },
-  { filename: 'ballot-access-petition.pdf', title: 'Ballot Access Petition', description: 'Standardized petition template with signature collection table, circulator affidavit, and notarization block. Adaptable to state-specific format requirements.', pages: '4', icon: Vote, color: '#EF4444' },
-  { filename: 'candidate-nomination.pdf', title: 'Candidate Nomination Form', description: 'Official nomination form for candidates seeking party endorsement. Covers candidate information, principles affirmation, qualifications, and endorsement request.', pages: '4', icon: Users, color: '#EF4444' },
+  { filename: 'state-formation-packet.pdf', title: 'State Formation Packet', description: 'Complete filing documentation for state-level party recognition. Includes statement of organization, principles adoption, financial disclosure, petition and convention certification, and submission checklist.', pages: '7', category: 'State Filing', icon: FileText, color: '#EF4444' },
+  { filename: 'state-committee-bylaws.pdf', title: 'State Committee Bylaws', description: 'Governing rules for the state coordinating body covering composition, officers, meetings, candidate endorsement, finances, amendments, and dissolution.', pages: '6', category: 'State Filing', icon: BookOpen, color: '#EF4444' },
+  { filename: 'ballot-access-petition.pdf', title: 'Ballot Access Petition', description: 'Standardized petition template with signature collection table, circulator affidavit, and notarization block. Adaptable to state-specific format requirements.', pages: '4', category: 'State Filing', icon: Vote, color: '#EF4444' },
+  { filename: 'candidate-nomination.pdf', title: 'Candidate Nomination Form', description: 'Official nomination form for candidates seeking party endorsement. Covers candidate information, principles affirmation, qualifications, and endorsement request.', pages: '4', category: 'State Filing', icon: Users, color: '#EF4444' },
 ];
 
 function DocumentCard({ doc, i }: { doc: typeof CORE_DOCUMENTS[0]; i: number }) {
