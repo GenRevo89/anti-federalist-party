@@ -117,7 +117,7 @@ export default function OnChainTransparency() {
           </h3>
         </ScrollReveal>
 
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '1.5rem', marginBottom: '3rem' }}>
+        <div className="facet-explorer-grid" style={{ marginBottom: '3rem' }}>
           {/* Facet Tabs */}
           <ScrollReveal>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>

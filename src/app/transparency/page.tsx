@@ -147,7 +147,7 @@ export default function TransparencyPage() {
             </ScrollReveal>
 
             {/* Facet Explorer */}
-            <div style={{ display: 'grid', gridTemplateColumns: 'minmax(200px, 1fr) 2.5fr', gap: '1.5rem', marginBottom: '2rem' }}>
+            <div className="facet-explorer-grid" style={{ marginBottom: '2rem' }}>
               <ScrollReveal>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                   {FACETS.map((fc, i) => (

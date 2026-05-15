@@ -774,18 +774,36 @@
   .county-involve-grid { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 768px) {
-  .chapters-stats-inner { gap: 1.5rem; }
+  .chapters-stats-inner { gap: 1.5rem; flex-wrap: wrap; }
   .chapters-stat-num { font-size: 1.5rem; }
   .chapters-state-grid { grid-template-columns: repeat(2, 1fr); }
   .county-grid { grid-template-columns: repeat(2, 1fr); }
   .state-hero-letter { font-size: 5rem; }
   .county-involve-grid { grid-template-columns: 1fr; }
   .paper-nav-grid { grid-template-columns: 1fr; }
-  .paper-context-card {
-  @apply bg-black/40 backdrop-blur-2xl border border-white/10 shadow-2xl rounded-2xl; flex-direction: column; }
+  .paper-context-card { flex-direction: column; }
   .library-series-header { flex-wrap: wrap; }
   .library-papers-grid { grid-template-columns: repeat(2, 1fr); }
   .library-series-header-block { flex-wrap: wrap; }
+  .chapters-cta-inner { flex-direction: column; text-align: center; }
+  .county-action-grid { grid-template-columns: 1fr; }
+  .content-wrap { padding-left: 1rem; padding-right: 1rem; }
+  .content-wrap-md { padding-left: 1rem; padding-right: 1rem; }
+  .county-featured-paper { padding: 1.5rem; }
+  .county-mission-card { padding: 1.5rem; }
+  .paper-article { padding: 1.75rem 1.25rem; }
+  .chapters-hero { min-height: 70vh; }
+  .library-hero { min-height: 70vh; }
+  .county-hero { min-height: 55vh; }
+  .library-series-badge { margin-left: 0; margin-top: 0.5rem; }
+}
+@media (max-width: 480px) {
+  .chapters-state-grid { grid-template-columns: 1fr; }
+  .county-grid { grid-template-columns: 1fr; }
+  .library-papers-grid { grid-template-columns: 1fr; }
+  .chapters-stats-inner { flex-direction: column; gap: 1rem; }
+  .chapters-stat-divider { width: 40px; height: 1px; }
+  .state-hero-letter { font-size: 3.5rem; margin-bottom: -1rem; }
 }
 
 /* ---- LIBRARY SERIES HEADER BLOCK ---- */
