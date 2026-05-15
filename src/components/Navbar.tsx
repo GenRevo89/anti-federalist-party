@@ -29,6 +29,7 @@ export default function Navbar() {
       <ul className="navbar-links">
         <li><a href="/manifesto">Manifesto</a></li>
         <li><a href="/library/papers">Archive</a></li>
+        <li><a href="/transparency">Transparency</a></li>
         <li><a href="/chapters">Chapters</a></li>
         <li><a href="/#join" className="navbar-cta">Join the Movement</a></li>
       </ul>

@@ -4,6 +4,7 @@ import Prophecy from "@/components/Prophecy";
 import Pillars from "@/components/Pillars";
 import Platform from "@/components/Platform";
 import Origin from "@/components/Origin";
+import OnChainTransparency from "@/components/OnChainTransparency";
 import CallToAction from "@/components/CallToAction";
 import Directories from "@/components/Directories";
 import Footer from "@/components/Footer";
@@ -21,6 +22,8 @@ export default function Home() {
         <Pillars />
         <div className="scene-break" />
         <Platform />
+        <div className="scene-break" />
+        <OnChainTransparency />
         <div className="scene-break" />
         <Origin />
         <div className="scene-break" />

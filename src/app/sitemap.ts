@@ -18,6 +18,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   routes.push({ url: `${baseUrl}/library/papers`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 });
   routes.push({ url: `${baseUrl}/compare/parties`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 });
   routes.push({ url: `${baseUrl}/compare/politicians`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 });
+  routes.push({ url: `${baseUrl}/transparency`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 });
 
   // ─── Compare: Parties ───
   for (const slug of ['democrat','republican','libertarian','green','constitution','maga-movement','democratic-socialists','forward-party','no-labels','progressive-movement','reform-party']) {
