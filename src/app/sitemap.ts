@@ -8,7 +8,7 @@ export async function generateSitemaps() {
 }
 
 export default async function sitemap({ id }: { id: number }): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = 'https://antifederalist.org';
+  const baseUrl = 'https://anti-federalists.com';
   const routes: MetadataRoute.Sitemap = [];
 
   if (id === 0) {
