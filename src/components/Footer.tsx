@@ -57,10 +57,9 @@ export default function Footer() {
           <div className="footer-col">
             <div className="footer-col-title">Connect</div>
             <ul>
-              <li><a href="mailto:contact@antifederalist.org">Contact</a></li>
-              <li><a href="https://x.com" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
-              <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+              <li><a href="mailto:contact@anti-federalists.com">Contact</a></li>
               <li><a href="/#join">Newsletter</a></li>
+              <li><a href="/documents">Party Documents</a></li>
             </ul>
           </div>
         </div>

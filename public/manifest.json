@@ -1,0 +1,19 @@
+{
+  "name": "The Anti-Federalist Party",
+  "short_name": "Anti-Federalists",
+  "description": "The government closest to the people serves the people best. A national political movement restoring the founders' vision of decentralized power.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0A0A12",
+  "theme_color": "#0A0A12",
+  "orientation": "portrait-primary",
+  "categories": ["politics", "government", "education"],
+  "icons": [
+    {
+      "src": "/images/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
